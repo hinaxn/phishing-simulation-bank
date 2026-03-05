@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sensibilisation au Phishing</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="page-awareness">
+
+  <div class="hero">
+    <div class="hero-badge">⚠ Simulation pédagogique</div>
+    <h1>Vous venez de tomber dans<br><span>un piège de phishing.</span></h1>
+    <p>La page précédente imitait une vraie banque. Voici comment la reconnaître — et ne plus jamais se faire avoir.</p>
+    <a href="email.html" class="hero-cta">← Recommencer la simulation</a>
+  </div>
+
+  <div class="awareness-container">
+
+    <section class="aw-section">
+      <div class="section-label">C'est quoi ?</div>
+      <div class="section-title">Le phishing expliqué simplement</div>
+      <div class="section-desc">Une technique d'escroquerie vieille comme Internet, et toujours aussi efficace.</div>
+
+      <div class="definition-box">
+        <h3>Phishing (hameçonnage)</h3>
+        <p>Technique d'attaque où un cybercriminel crée une copie convaincante d'un site légitime (banque, réseau social, service public) pour voler les identifiants, mots de passe ou données bancaires. Le terme vient de <em>fishing</em> — on "pêche" des victimes avec un appât.</p>
+      </div>
+
+      <div class="stats-row">
+        <div class="stat-card">
+          <div class="stat-number">3,4B</div>
+          <div class="stat-label">emails de phishing envoyés chaque jour dans le monde</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number">36%</div>
+          <div class="stat-label">des violations de données impliquent du phishing</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number">97%</div>
+          <div class="stat-label">des utilisateurs ne savent pas identifier un email de phishing</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="aw-section">
+      <div class="section-label">Analyse de la fausse page</div>
+      <div class="section-title">5 indices que vous auriez pu repérer</div>
+      <div class="section-desc">Chaque détail compte. Voici ce qui trahissait la page bancaire.</div>
+
+      <div class="indices-grid">
+
+        <div class="indice-card">
+          <div class="indice-num">01</div>
+          <div>
+            <div class="indice-title">Pas de cadenas HTTPS</div>
+            <div class="indice-desc">
+              Le cadenas dans la barre d'adresse était rouge et ouvert. Une vraie banque utilise <strong>toujours</strong> HTTPS. Sans HTTPS, vos données voyagent en clair sur le réseau.
+              <div class="code-snippet">
+                <span class="bad">http://</span>creditsecur... → non chiffré ❌
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="indice-card">
+          <div class="indice-num">02</div>
+          <div>
+            <div class="indice-title">URL suspecte — Typosquatting</div>
+            <div class="indice-desc">
+              L'adresse contenait <code>c1ient</code> avec un <strong>1</strong> à la place du <strong>l</strong>. C'est du typosquatting : imiter une URL en changeant un seul caractère.
+              <div class="code-snippet">
+                <span class="bad">creditsecur-espace-c1ient.com</span> ❌<br>
+                <span class="good">creditsecur.fr/espace-client</span> ✓
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="indice-card">
+          <div class="indice-num">03</div>
+          <div>
+            <div class="indice-title">Logo approximatif</div>
+            <div class="indice-desc">
+              Le logo était un simple emoji 🏦 au lieu d'un vrai logo vectoriel HD. Les faux sites n'ont pas accès aux fichiers officiels de la marque.
+            </div>
+          </div>
+        </div>
+
+        <div class="indice-card">
+          <div class="indice-num">04</div>
+          <div>
+            <div class="indice-title">Liens morts</div>
+            <div class="indice-desc">
+              "Mot de passe oublié ?" et les liens du footer ne menaient nulle part. Les pages de phishing n'implémentent que le formulaire de vol de données — rien d'autre.
+            </div>
+          </div>
+        </div>
+
+        <div class="indice-card">
+          <div class="indice-num">05</div>
+          <div>
+            <div class="indice-title">Urgence artificielle</div>
+            <div class="indice-desc">
+              "Votre compte est suspendu", "activité suspecte détectée"... C'est une technique de manipulation classique pour vous faire agir vite, sans réfléchir. Les vraies banques ne vous demandent jamais vos identifiants par email.
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="aw-section">
+      <div class="section-label">Comparaison</div>
+      <div class="section-title">Faux site vs Vrai site</div>
+      <div class="section-desc">Les différences côte à côte pour mieux les mémoriser.</div>
+
+      <div class="compare-grid">
+        <div class="compare-card fake">
+          <div class="compare-label">❌ Site de phishing</div>
+          <div class="compare-item"><span>🔓</span> HTTP non sécurisé</div>
+          <div class="compare-item"><span>🌐</span> Domaine inconnu ou modifié</div>
+          <div class="compare-item"><span>🖼</span> Logo flou ou emoji</div>
+          <div class="compare-item"><span>🔗</span> Liens non fonctionnels</div>
+          <div class="compare-item"><span>⚡</span> Urgence artificielle</div>
+          <div class="compare-item"><span>✉️</span> Email expéditeur suspect</div>
+        </div>
+        <div class="compare-card real">
+          <div class="compare-label">✓ Vrai site bancaire</div>
+          <div class="compare-item"><span>🔒</span> HTTPS avec certificat valide</div>
+          <div class="compare-item"><span>🌐</span> Domaine officiel connu</div>
+          <div class="compare-item"><span>🖼</span> Logo HD, vectoriel</div>
+          <div class="compare-item"><span>🔗</span> Tous les liens fonctionnent</div>
+          <div class="compare-item"><span>😌</span> Pas de pression temporelle</div>
+          <div class="compare-item"><span>✉️</span> Email depuis le domaine officiel</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="aw-section">
+      <div class="section-label">Se protéger</div>
+      <div class="section-title">6 réflexes à adopter</div>
+      <div class="section-desc">Des habitudes simples qui protègent contre la majorité des attaques.</div>
+
+      <div class="tips-grid">
+        <div class="tip-card">
+          <div class="tip-icon">🔒</div>
+          <div class="tip-title">Vérifier le HTTPS</div>
+          <div class="tip-desc">Avant de saisir un mot de passe, regardez toujours si l'URL commence par <code>https://</code> et que le cadenas est fermé.</div>
+        </div>
+        <div class="tip-card">
+          <div class="tip-icon">🌐</div>
+          <div class="tip-title">Lire l'URL entière</div>
+          <div class="tip-desc">Un seul caractère changé suffit pour être sur un faux site. Ex : <code>paypa1.com</code> au lieu de <code>paypal.com</code>.</div>
+        </div>
+        <div class="tip-card">
+          <div class="tip-icon">🔑</div>
+          <div class="tip-title">Gestionnaire de mots de passe</div>
+          <div class="tip-desc">Bitwarden, 1Password... Ils ne remplissent automatiquement que sur le vrai domaine — protection anti-phishing intégrée.</div>
+        </div>
+        <div class="tip-card">
+          <div class="tip-icon">📱</div>
+          <div class="tip-title">Activer le 2FA</div>
+          <div class="tip-desc">La double authentification vous protège même si votre mot de passe est volé. Activez-la partout où c'est possible.</div>
+        </div>
+        <div class="tip-card">
+          <div class="tip-icon">🚫</div>
+          <div class="tip-title">Ne jamais cliquer les liens</div>
+          <div class="tip-desc">Tapez vous-même l'adresse dans le navigateur. N'utilisez jamais un lien reçu par email ou SMS pour vous connecter.</div>
+        </div>
+        <div class="tip-card">
+          <div class="tip-icon">📢</div>
+          <div class="tip-title">Signaler</div>
+          <div class="tip-desc">En France, signalez les tentatives sur <strong>phishing-initiative.fr</strong> ou <strong>cybermalveillance.gouv.fr</strong>.</div>
+        </div>
+      </div>
+    </section>
+
+  </div>
+
+  <footer class="aw-footer">
+    <strong>Projet de sensibilisation au phishing</strong> — Réalisé dans un cadre préventif.<br>
+    Aucune donnée n'a été collectée. Cette simulation a pour seul but de vous éduquer.
+  </footer>
+
+</body>
+</html>

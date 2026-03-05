@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Boîte mail — Simulation</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="page-email">
+
+  <div class="gmail-top">
+    <div class="gmail-logo">G<span>m</span><em>a</em><b>i</b>l</div>
+    <input class="gmail-search" type="text" placeholder="Rechercher dans les e-mails">
+    <div class="gmail-user">utilisateur@gmail.com</div>
+  </div>
+
+  <div class="pedagogy-banner">
+    🎓 <strong>Simulation pédagogique</strong> — Cliquez sur l'email suspect pour voir comment fonctionne une attaque de phishing.
+  </div>
+
+  <div class="layout">
+
+    <div class="sidebar">
+      <div class="sidebar-item active">📥 Boîte de réception <span class="badge-alert">1</span></div>
+      <div class="sidebar-item">⭐ Suivis</div>
+      <div class="sidebar-item">🕐 En attente</div>
+      <div class="sidebar-item">📤 Envoyés</div>
+      <div class="sidebar-item">📄 Brouillons</div>
+      <div class="sidebar-item">🗑 Corbeille</div>
+    </div>
+
+    <div class="main-area">
+      <div class="email-list">
+
+        <div class="email-row unread" onclick="window.location.href='bank.html'">
+          <div class="email-avatar" style="background:#EA4335;">C</div>
+          <div class="email-sender">CréditSécur Banque</div>
+          <div class="email-preview">
+            <strong>⚠️ Action requise : Votre compte est suspendu</strong> —
+            Nous avons détecté une activité inhabituelle. Veuillez confirmer votre identité immédiatement...
+          </div>
+          <div class="email-date">10:42</div>
+        </div>
+
+        <div class="email-row">
+          <div class="email-avatar" style="background:#34A853;">A</div>
+          <div class="email-sender">Amazon</div>
+          <div class="email-preview"><strong>Votre commande a été expédiée</strong> — Votre colis arrivera demain entre 9h et 13h...</div>
+          <div class="email-date">09:15</div>
+        </div>
+
+        <div class="email-row">
+          <div class="email-avatar" style="background:#4285F4;">L</div>
+          <div class="email-sender">LinkedIn</div>
+          <div class="email-preview"><strong>3 personnes ont consulté votre profil</strong> — Voyez qui s'intéresse à vous cette semaine...</div>
+          <div class="email-date">Hier</div>
+        </div>
+
+        <div class="email-row">
+          <div class="email-avatar" style="background:#FBBC05;">N</div>
+          <div class="email-sender">Netflix</div>
+          <div class="email-preview"><strong>Nouveautés de la semaine</strong> — Découvrez les nouvelles séries ajoutées pour vous...</div>
+          <div class="email-date">Hier</div>
+        </div>
+
+        <div class="email-row">
+          <div class="email-avatar" style="background:#9c27b0;">M</div>
+          <div class="email-sender">Marie Dupont</div>
+          <div class="email-preview"><strong>Re: Réunion vendredi</strong> — Oui ça me convient parfaitement, à vendredi alors !</div>
+          <div class="email-date">Lun.</div>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+
+</body>
+</html>

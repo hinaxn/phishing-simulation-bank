@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CréditSécur — Espace Client</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="page-bank">
+
+  <div class="fake-browser">
+    <div class="browser-dots">
+      <div class="dot red"></div>
+      <div class="dot yellow"></div>
+      <div class="dot green"></div>
+    </div>
+    <div class="url-bar">
+      <span class="lock-icon">🔓</span>
+      <span class="url-text">http://<span class="suspicious">creditsecur-espace-c1ient.com</span>/login</span>
+    </div>
+  </div>
+
+  <div class="bank-header">
+    <div class="bank-logo">
+      <div class="logo-icon">🏦</div>
+      CréditSécur
+    </div>
+    <div class="bank-header-right">Banque en ligne sécurisée</div>
+  </div>
+
+  <main class="bank-main">
+    <div class="login-card">
+      <div class="card-title">Connexion à votre espace</div>
+      <div class="card-sub">⚠️ Activité suspecte détectée. Veuillez confirmer votre identité.</div>
+
+      <div class="form-group">
+        <label for="num">Numéro client</label>
+        <input type="text" id="num" value="1234 5678 90">
+      </div>
+
+      <div class="form-group">
+        <label for="pwd">Mot de passe</label>
+        <input type="password" id="pwd" value="Password123">
+      </div>
+
+      <div class="form-footer">
+        <label class="remember">
+          <input type="checkbox"> Se souvenir de moi
+        </label>
+        <a href="#" class="forgot">Mot de passe oublié ?</a>
+      </div>
+
+      <button class="btn-login" id="loginBtn">Se connecter</button>
+
+      <div class="divider">Besoin d'aide ?</div>
+      <div class="help-line">Service client : <strong>0800 99 99 99</strong></div>
+    </div>
+  </main>
+
+  <footer class="bank-footer">
+    © 2024 CréditSécur — Tous droits réservés — Mentions légales
+  </footer>
+
+  <div class="reveal-overlay" id="revealOverlay">
+    <div class="reveal-box">
+
+      <div class="terminal-bar">
+        <div class="t-dot r"></div>
+        <div class="t-dot y"></div>
+        <div class="t-dot g"></div>
+        <div class="terminal-title">attacker_server — interception.log</div>
+      </div>
+
+      <div class="terminal-body">
+        <div class="terminal-line l1">
+          <span class="prompt">$</span>&nbsp;<span class="cmd">connexion_entrante</span>&nbsp;<span class="ok">[ÉTABLIE ✓]</span>
+        </div>
+        <div class="terminal-line l2">
+          <span class="prompt">$</span>&nbsp;<span class="cmd">num_client</span>&nbsp;=&nbsp;<span class="val" id="displayNum"></span>
+        </div>
+        <div class="terminal-line l3">
+          <span class="prompt">$</span>&nbsp;<span class="cmd">mot_de_passe</span>&nbsp;=&nbsp;<span class="val" id="displayPwd"></span>
+        </div>
+        <div class="terminal-line l4">
+          <span class="prompt">$</span>&nbsp;<span class="cmd">ip_victime</span>&nbsp;=&nbsp;<span class="val">192.168.1.42 (simulé)</span>
+        </div>
+        <div class="terminal-line l5">
+          <span class="prompt">$</span>&nbsp;<span class="warn">→ données transmises au serveur distant... [OK]</span>
+        </div>
+      </div>
+
+      <div class="reveal-footer" id="revealFooter">
+        <div class="reveal-title">🎣 Vous venez de vous faire phisher.</div>
+        <div class="reveal-sub">
+          Ces identifiants fictifs (<strong>1234 5678 90</strong> / <strong>Password123</strong>) ont été
+          "interceptés" instantanément. Dans une vraie attaque, ce seraient vos vraies données qui
+          partiraient chez un cybercriminel — en moins d'une seconde.
+        </div>
+        <a href="awareness.html" class="reveal-btn">Comprendre et se protéger →</a>
+      </div>
+
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
