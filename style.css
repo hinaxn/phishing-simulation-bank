@@ -1,3 +1,4 @@
+
 * { margin: 0; padding: 0; box-sizing: border-box; }
 
 body {
@@ -148,6 +149,7 @@ body {
   display: flex;
   flex-direction: column;
 }
+
 .fake-browser {
   background: #e8eaed;
   padding: 8px 16px;
@@ -192,7 +194,6 @@ body {
   padding: 0 2px;
 }
 
-/* Header banque */
 .bank-header {
   background: #1a3a6b;
   padding: 14px 40px;
@@ -229,7 +230,7 @@ body {
   justify-content: center;
   padding: 40px 20px;
 }
- 
+
 .login-card {
   background: white;
   border-radius: 12px;
@@ -388,6 +389,7 @@ input:focus { border-color: #1a3a6b; }
 .terminal-line .ok     { color: #3fb950; }
 .terminal-line .warn   { color: #d29922; }
 
+/* Animations en cascade — chaque ligne apparaît l'une après l'autre */
 .l1 { animation: reveal 0.6s steps(40) 0.2s forwards; }
 .l2 { animation: reveal 0.6s steps(40) 1.0s forwards; }
 .l3 { animation: reveal 0.7s steps(50) 1.8s forwards; }
@@ -458,6 +460,7 @@ input:focus { border-color: #1a3a6b; }
     rgba(255,255,255,0.015) 40px,
     rgba(255,255,255,0.015) 41px
   );
+  pointer-events: none;
 }
 
 .hero-badge {
@@ -681,7 +684,6 @@ input:focus { border-color: #1a3a6b; }
   color: #4a5568;
 }
 
-
 .tips-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -700,7 +702,6 @@ input:focus { border-color: #1a3a6b; }
 .tip-desc  { font-size: 0.8rem; color: #718096; line-height: 1.6; }
 .tip-desc code { background: #f7fafc; padding: 1px 5px; border-radius: 4px; font-size: 0.75rem; }
 
-
 .aw-footer {
   background: #1a202c;
   color: rgba(255,255,255,0.4);
@@ -711,7 +712,6 @@ input:focus { border-color: #1a3a6b; }
 }
 
 .aw-footer strong { color: rgba(255,255,255,0.7); }
-
 
 @keyframes fadeIn {
   from { opacity: 0; }
@@ -732,7 +732,6 @@ input:focus { border-color: #1a3a6b; }
   from { max-width: 0; }
   to   { max-width: 100%; }
 }
-
 
 @media (max-width: 600px) {
   .stats-row    { grid-template-columns: 1fr; }
